@@ -1,0 +1,113 @@
+/* Resetowanie domyślnych stylów przeglądarki */
+body, h1, h2, p, ul, ol, li, a {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.slider-container {
+    width: 50%;
+    overflow: hidden;
+    position: relative;
+    height: 450px; /* Ustaw wysokość slidera */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: calc(50% - 15vw - 10px);
+    left: calc(50% - 18.5vw - 10px);
+    margin-bottom: 10px; /* Odstęp między sliderem a sekcją recipe */
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    flex: 0 0 100%;
+}
+
+
+img {
+    width: 80%;
+    object-fit: fit;
+}
+
+.recipe {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+    display: inline-block;
+    width: calc(33.33% - 60px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.recipe:hover {
+    transform: translateY(-10px);
+}
+
+.recipe h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.recipe img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #e0e0e0;
+    margin-bottom: 10px;
+}
+
+.recipe ul, .recipe ol {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+footer {
+    position: relative;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    bottom: 0px;
+}
